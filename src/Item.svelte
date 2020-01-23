@@ -2,12 +2,12 @@
 import Axios from 'axios';
 // import Items from './Items';
 	
-	export let name;
+	// export let name;
 
 	let items = [];
 
  (function getPlayers (){
-	 Axios.get('http://127.0.0.1:8000/api/items/').then(response=>{
+	 Axios.get('https://lara-tasks-api.herokuapp.com/api/items/').then(response=>{
 		 items = response.data.data;
 		 console.log(items)
 	 })
